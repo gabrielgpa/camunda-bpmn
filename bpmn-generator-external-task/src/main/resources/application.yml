@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+camunda:
+  bpm:
+    client:
+      base-url: http://localhost:8080/engine-rest
+      worker-id: bpmn-gen-worker
+      async-response-timeout: 20000
+      max-tasks: 5
+      lock-duration: 300000
+
+
+logging:
+  level:
+    org.camunda.bpm.client: DEBUG
+    org.camunda.bpm.client.spring: DEBUG
+    org.springframework: INFO

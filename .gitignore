@@ -1,0 +1,6 @@
+.idea
+*.db
+**/target/*
+.settings
+.DS_Store
+**/.DS_Store
