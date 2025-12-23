@@ -1,27 +1,23 @@
 package com.dilos.gpa.engine.handlers;
 
+import java.util.Map;
+
 import org.camunda.bpm.client.spring.annotation.ExternalTaskSubscription;
 import org.camunda.bpm.client.task.ExternalTask;
 import org.camunda.bpm.client.task.ExternalTaskHandler;
 import org.camunda.bpm.client.task.ExternalTaskService;
 import org.springframework.stereotype.Component;
 
-import java.util.Map;
-
 @Component
 @ExternalTaskSubscription("bpmn-generator-worker")
 public class BpmnGeneratorExternalHandler implements ExternalTaskHandler {
 
     public void execute(ExternalTask task, ExternalTaskService service) {
-
-        String pedidoId = task.getVariable("pedidoId");
-        Integer valor = task.getVariable("valor");
-
         try {
-            System.out.println("Processando pedidoId=" + pedidoId + " valor=" + valor);
+            System.out.println("External Task BPMN Generator - Started Processing");
 
             Map<String, Object> vars = Map.of(
-                    "statusProcessamento", "OK"
+                    "statusProcess", "OK"
             );
 
             service.complete(task, vars);
