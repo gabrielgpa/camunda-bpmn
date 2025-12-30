@@ -27,11 +27,11 @@
 
         <bpmn-generator-pa.version>0.0.1-SNAPSHOT</bpmn-generator-pa.version>
 
-        <slf4j-api.version>2.0.13</slf4j-api.version>
-        <logback-classic.version>1.5.13</logback-classic.version>
-        <jakarta.xml.bind-api.version>4.0.2</jakarta.xml.bind-api.version>
-        <jaxb-runtime.version>4.0.5</jaxb-runtime.version>
-        <commons-lang3.version>3.18.0</commons-lang3.version>
+        <slf4j-api.version>2.0.17</slf4j-api.version>
+        <logback-classic.version>1.5.23</logback-classic.version>
+        <jakarta.xml.bind-api.version>4.0.4</jakarta.xml.bind-api.version>
+        <jaxb-runtime.version>4.0.6</jaxb-runtime.version>
+        <commons-lang3.version>3.20.0</commons-lang3.version>
     </properties>
 
     <dependencyManagement>
