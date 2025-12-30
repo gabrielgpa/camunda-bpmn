@@ -8,10 +8,15 @@ updates:
       time: "04:00"
       timezone: "UTC"
     open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"
     groups:
       all-dependencies:
         patterns:
           - "*"
+
   - package-ecosystem: "maven"
     directory: "/bpmn-generator-engine"
     schedule:
@@ -20,10 +25,15 @@ updates:
       time: "04:00"
       timezone: "UTC"
     open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"
     groups:
       all-dependencies:
         patterns:
           - "*"
+
   - package-ecosystem: "maven"
     directory: "/bpmn-generator-external-task"
     schedule:
@@ -32,6 +42,10 @@ updates:
       time: "04:00"
       timezone: "UTC"
     open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"
     groups:
       all-dependencies:
         patterns:
