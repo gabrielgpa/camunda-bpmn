@@ -10,9 +10,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.dilos.gpa.engine</groupId>
     <artifactId>bpmn-generator-engine</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
@@ -43,6 +41,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.dilos.gpa.engine</groupId>
+            <artifactId>bpmn-generator-pa</artifactId>
         </dependency>
     </dependencies>
 
